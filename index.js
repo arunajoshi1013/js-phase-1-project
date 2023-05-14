@@ -53,6 +53,10 @@ function wordFilter(data) {
 			}
 		}
 	});
+
+	/* A Mouseout event will hide the word score element */
+	return document.getElementById("ulist").addEventListener("mouseout", function(e) {
+	});
 }
 
 /*
