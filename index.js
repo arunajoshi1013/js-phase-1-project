@@ -1,3 +1,6 @@
+/* Global var to store the fetched data */
+let fetchedData;
+
 /*
  * It all begins here. Try to fetch words from the URL below.
  * If that fails, for some reason, then try the JSON server.
