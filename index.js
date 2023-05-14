@@ -44,6 +44,14 @@ function wordFilter(data) {
 
     /* A Mouseover event will make the word score element visible */
 	document.getElementById("ulist").addEventListener("mouseover", function(e) {
+        if (e.target && e.target.matches("li.mousehover")) {
+			if (e.type === "mouseover") {
+				const child = e.target.children[0];
+				child.style.display = 'block';
+				child.style.color = 'red';
+				child.style.fontStyle = "italic";
+			}
+		}
 	});
 }
 
