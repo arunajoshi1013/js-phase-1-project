@@ -1,6 +1,18 @@
 /* Global var to store the fetched data */
 let fetchedData;
 
+function showChosenWords(event) {
+	event.preventDefault();
+
+	if (event.type === "submit") {
+		const tagElem = document.getElementById("tag");
+		const tagVal = tagElem.options[tagElem.selectedIndex].value;
+
+		/* Use Array filter method to get all the words that contain the specified tag */
+		const filteredData = fetchedData.filter( tagMatcher => tagMatcher.tags.includes(tagVal));
+	}
+}
+
 function wordFilter(data) {
 	/* Populate the global fetchedData var */
 	fetchedData = data;
