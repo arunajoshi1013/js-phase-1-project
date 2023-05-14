@@ -16,6 +16,14 @@ function showChosenWords(event) {
 		ul.innerHTML = "";
 		ul.innerText = "Here's the list of all " + tagElem.options[tagElem.selectedIndex].textContent + "s, hover to see the word score";
 
+        /* Use Array forEach to iterate over all the words and create a list item out of them */
+		filteredData.forEach(element => {
+			let li = document.createElement('li');
+			let li_child = document.createElement('li');
+			li.innerText = element.word;
+			li.className = 'mousehover';
+			li.style.width = "72px";
+		});
 	}
 }
 
