@@ -5,7 +5,18 @@
  */
 fetch("https://api.datamuse.com/words?ml=ringing+in+the+ears")
 .then(function (response) {
+	if (response.ok) {
 		return response.json();
+	} else {
+		console.log("Try JSON server")
+		fetch("http://localhost:3000/words")
+		.then(function (response) {
+			return response.json();
+		})
+		.then(function (data) {
+			return wordFilter(data);
+		})
+	}
 })
 .then(function (data) {
 	return wordFilter(data);
