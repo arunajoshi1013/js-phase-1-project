@@ -1,3 +1,10 @@
 body {
 	background-color: rgb(215, 215, 209);
 }
+
+.words {
+	color:green;
+	margin: auto;
+	text-align:center;
+	font-size: 32px;
+}
