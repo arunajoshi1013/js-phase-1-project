@@ -23,6 +23,13 @@ function showChosenWords(event) {
 			li.innerText = element.word;
 			li.className = 'mousehover';
 			li.style.width = "72px";
+
+			/* Create a child element to store the word score that will be displayed on a mouseover event */
+			li_child.innerText = element.score;
+			li_child.style.display = 'none';
+			li_child.id = element.word;
+			li.appendChild(li_child);
+			ul.appendChild(li);
 		});
 	}
 }
