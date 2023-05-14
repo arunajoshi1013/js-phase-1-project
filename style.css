@@ -8,3 +8,9 @@ body {
 	text-align:center;
 	font-size: 32px;
 }
+
+#tagform {
+	text-align: center;
+	color: rgb(43, 98, 250);
+	font-size: 26px;
+}
