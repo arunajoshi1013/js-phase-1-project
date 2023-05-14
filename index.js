@@ -10,6 +10,12 @@ function showChosenWords(event) {
 
 		/* Use Array filter method to get all the words that contain the specified tag */
 		const filteredData = fetchedData.filter( tagMatcher => tagMatcher.tags.includes(tagVal));
+
+		/* Create an Unordered list and add each word as a list item */
+		let ul = document.getElementById("ulist");
+		ul.innerHTML = "";
+		ul.innerText = "Here's the list of all " + tagElem.options[tagElem.selectedIndex].textContent + "s, hover to see the word score";
+
 	}
 }
 
