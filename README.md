@@ -15,3 +15,12 @@ How it works ?
 -   The app uses the fetch() API to fetch and process the array of words received from the server.
 -   It then filters out the words that do not have the tag specified by the user
 -   There are Three event listeners that listen to - Submit, Mouseover and Mouseout events.
+
+Conclusion
+-   This app showcases what I have learnt in the Full stack Phase 1 course, over the last month.
+-   On a high level, this includes
+    -   Web page creation with HTML
+    -   Web page styling with CSS
+    -   Logic implementation with JavaScript
+
+-   This has been a great experience so far and I look forward to learning more
