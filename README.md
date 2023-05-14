@@ -10,3 +10,8 @@ What it does ?
 -   The app presents the user with a dropdown that lists 4 choices - Noun, Adjective, Verb and Adverb, along with a Submit button.
 -   Depending on what the user chose, the app will update the HTML page with all the words (returned from the server) that have the tag.
 -   A backup option to fetch data from JSON DB server is also provided in case the remote server is not up.
+
+How it works ?
+-   The app uses the fetch() API to fetch and process the array of words received from the server.
+-   It then filters out the words that do not have the tag specified by the user
+-   There are Three event listeners that listen to - Submit, Mouseover and Mouseout events.
