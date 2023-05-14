@@ -14,3 +14,10 @@ body {
 	color: rgb(43, 98, 250);
 	font-size: 26px;
 }
+
+#ulist {
+	color: rgb(87, 13, 157);
+	text-align: center;
+	columns: 3;
+	font-size: 18px;
+}
