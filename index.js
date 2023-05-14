@@ -41,6 +41,10 @@ function wordFilter(data) {
 	/* First Event listener that acts on a submit event */
 	const submitForm = document.getElementById("tagform");
 	submitForm.addEventListener("submit", showChosenWords);
+
+    /* A Mouseover event will make the word score element visible */
+	document.getElementById("ulist").addEventListener("mouseover", function(e) {
+	});
 }
 
 /*
