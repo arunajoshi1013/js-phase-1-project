@@ -56,6 +56,12 @@ function wordFilter(data) {
 
 	/* A Mouseout event will hide the word score element */
 	return document.getElementById("ulist").addEventListener("mouseout", function(e) {
+        if (e.target && e.target.matches("li.mousehover")) {
+			if (e.type === "mouseout") {
+				const child = e.target.children[0];
+				child.style.display = 'none';
+			}
+		}
 	});
 }
 
